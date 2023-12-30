@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added positioning for absolute children */
+}
+
+.para {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.para span {
+    font-weight: bold;
+    color: #e44d26;
+}
+
+.imag {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#Button1, #Button2 {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#Button1 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+#Button2 {
+    position: absolute;
+    left: 29%;
+    top: 68%;
+    /* pointer-events: none ; */
+}
+
+#Button2:hover {
+    background-color: #333;
+}
+
+/* @media (max-width: 600px) {
+    #Button2 {
+        display: none; /* Hide the button on screens with a width of 600 pixels or less */
+    /* }
+} */ 
